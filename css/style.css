@@ -10,7 +10,7 @@
   --secondary-bg: #f5f5f5;
   --primary-text: #212529;
   --secondary-text: #7f7f90;
-  --accent-color: #D53333; /* اللون الجديد للوضع الفاتح */
+  --accent-color: #D53333;
   --card-bg: #ffffff;
 
   --primary-font: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -31,7 +31,7 @@
   --secondary-bg: #1e1e1e;
   --primary-text: #ffffff;
   --secondary-text: #b0b0b0;
-  --accent-color: #8F611F; /* اللون الجديد للوضع الداكن */
+  --accent-color: #8F611F;
   --card-bg: #1e1e1e;
   --card-shadow: #0000004d 3px 3px 15px 0px;
 }
