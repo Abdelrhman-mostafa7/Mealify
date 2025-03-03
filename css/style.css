@@ -496,19 +496,6 @@ body:has(#chefs:target) li a[href="#chefs"]::after {
   opacity: 1;
 }
 
-.card h3::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  height: 60px;
-  transform: translate(-50%, -50%);
-  width: calc(100% + 2 * var(--card-content-sides-padding));
-  background-image: url(../images/wave.svg);
-  background-repeat: repeat-x;
-  overflow: hidden;
-}
-
 .chefs .cards .card p {
   color: var(--secondary-text);
 }
@@ -687,7 +674,7 @@ body:has(#chefs:target) li a[href="#chefs"]::after {
 
 .footer {
   display: flex;
-  background-image: linear-gradient(#0009, #0009), url(./img/textured-metal-background.jpg);
+  background-image: linear-gradient(#0009, #0009), url(../img/textured-metal-background.jpg);
   padding: var(--inner-padding);
 }
 
