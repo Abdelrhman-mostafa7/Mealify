@@ -163,39 +163,57 @@ a.video-btn,
 /* ====================Navbar==================== */
 
 .navbar {
-  padding: 25px 0;
   background-color: var(--primary-bg);
-  box-shadow: var(--card-shadow);
-  position: fixed;
-  z-index: 99;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .inner {
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1 a {
+.navbar-brand {
   font-size: 30px;
-  color: var(--primary-text);
+  color: var(--primary-text) !important;
 }
 
-.navbar h1::after {
+.navbar-brand::after {
   content: ".";
   color: var(--accent-color);
   font-weight: bold;
 }
 
-.navbar ul {
-  width: 25%;
-  justify-content: space-between;
-  gap: 10px;
+.nav-link {
+  color: var(--secondary-text) !important;
+  font-weight: 600;
+  font-size: 17px;
 }
 
-.navbar ul li {
-  padding: 5px;
+.nav-link:hover {
+  color: var(--accent-color) !important;
 }
 
+.icon-switch {
+  cursor: pointer;
+}
+
+.icon-switch i {
+  font-size: 24px;
+  transition: opacity 0.4s ease;
+}
+
+.icon-switch .fa-sun {
+  color: #f1c40f;
+  opacity: 0;
+}
+
+.icon-switch .fa-moon {
+  color: #2c3e50;
+  opacity: 1;
+}
+
+.icon-switch input:checked ~ .fa-sun {
+  opacity: 1;
+}
+
+.icon-switch input:checked ~ .fa-moon {
+  opacity: 0;
+}
 .navbar ul li a::after {
   content: "";
   height: 2px;
@@ -235,42 +253,6 @@ body:has(#chefs:target) li a[href="#chefs"]::after {
   width: 100%;
 }
 
-.icon-switch {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.icon-switch input {
-  display: none;
-}
-
-.icon-switch i {
-  font-size: 24px;
-  transition: opacity 0.4s ease;
-}
-
-.icon-switch .fa-sun {
-  color: #f1c40f;
-  opacity: 0;
-}
-
-.icon-switch .fa-moon {
-  color: #2c3e50;
-  opacity: 1;
-}
-
-.icon-switch input:checked ~ .fa-sun {
-  opacity: 1;
-}
-
-.icon-switch input:checked ~ .fa-moon {
-  opacity: 0;
-}
-
-.navbar ul li a:hover {
-  color: var(--accent-color);
-}
 
 /* ====================HEADER==================== */
 
@@ -922,20 +904,6 @@ body:has(#chefs:target) li a[href="#chefs"]::after {
   .header .inner > div,
   .contact-info > div {
       width: 100%;
-  }
-
-  /* ===========Navbar=========== */
-  .navbar ul {
-      display: none;
-  }
-
-  .navbar h1::before {
-      content: "\f0c9";
-      font-family: "Font Awesome 6 Free";
-      color: var(--primary-black);
-      position: absolute;
-      right: 30px;
-      cursor: pointer;
   }
 
   /* ===========Header=========== */
